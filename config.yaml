@@ -1,0 +1,13 @@
+llm:
+  provider: ollama
+  config:
+    model: 'mistral'
+    temperature: 0.5
+    top_p: 1
+    stream: true
+    base_url: http://localhost:11434
+    
+embedder:
+  provider: huggingface
+  config:
+    model: 'sentence-transformers/all-mpnet-base-v2'

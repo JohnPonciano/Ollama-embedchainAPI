@@ -1,0 +1,8 @@
+# Ignorar a pasta env
+env/
+
+# Ignorar a pasta docs
+docs/
+
+# Ignorar a pasta db
+db/
