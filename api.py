@@ -85,6 +85,7 @@ async def add_documents(files: List[UploadFile] = File(...)):
     os.makedirs(DOCUMENTS_DIR)
 
 # Rota para consulta
+#Example query format {"question":"Porque o ceu e azul?"}
 @app.post("/query")
 async def query(data: dict = Body(...)):
     question = data.get("question")

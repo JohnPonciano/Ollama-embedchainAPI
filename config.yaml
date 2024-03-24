@@ -10,4 +10,4 @@ llm:
 embedder:
   provider: huggingface
   config:
-    model: 'sentence-transformers/all-mpnet-base-v2'
+    model: 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2'
