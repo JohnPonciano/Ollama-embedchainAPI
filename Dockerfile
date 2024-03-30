@@ -37,4 +37,5 @@ RUN crontab /etc/cron.d/cronjob
 RUN touch /var/log/cron.log
 
 # Comando para iniciar o servidor Uvicorn
-CMD ["python", "api.py"]
+# Comando para iniciar o servidor Uvicorn
+CMD ["sh", "-c", "if [ \"$BRANCH\" = \"main\" ]; then uvicorn api:app --host 0.0.0.0 --port 8000; else echo 'Running in homologation mode'; fi"]
