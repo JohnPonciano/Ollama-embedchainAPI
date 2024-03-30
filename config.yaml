@@ -2,7 +2,7 @@ llm:
   provider: ollama
   config:
     model: 'mistral'
-    temperature: 0.5
+    temperature: 1
     top_p: 1
     stream: true
     base_url: http://localhost:11434
