@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Diretório onde o repositório será clonado
-REPO_DIR="./app/"
+REPO_DIR="/app"
 
 # URL do repositório Git
 REPO_URL="https://github.com/JohnPonciano/Ollama-embedchainAPI.git"
